@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f5f2e9">
+	<meta name="description" content="Un guide simple et chaleureux pour découvrir les chiens, leurs caractères et leurs besoins.">
+	<title>Les chiens — Compagnons de vie</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header class="topbar">
+		<div class="brand" aria-label="Les chiens, compagnon de vie">
+			<span class="brand-mark" aria-hidden="true">C</span>
+			<span>compagnon<span class="brand-dot">.</span></span>
+		</div>
+		<p class="topbar-note"><span class="status-dot" aria-hidden="true"></span> Le guide des amoureux des chiens</p>
+		<span class="topbar-edition">ÉDITION Nº 01</span>
+	</header>
+
+	<main>
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="eyebrow-line"></span> NOS MEILLEURS AMIS</p>
+				<h1 id="hero-title">Plus qu’un<br>compagnon.<br><span>Une évidence.</span></h1>
+				<p class="hero-intro">Chaque chien a sa façon bien à lui de rendre la vie plus belle. Trouvez celui qui vous ressemble.</p>
+				<div class="hero-note">
+					<span class="note-number">01</span>
+					<span>Un guide pour mieux<br>les connaître, tout simplement.</span>
+				</div>
+			</div>
+			<div class="hero-visual">
+				<img class="hero-image" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&q=85" alt="Golden retriever au pelage doré dans un jardin" fetchpriority="high">
+				<div class="image-caption"><span>LE BONHEUR, À QUATRE PATTES</span><span class="caption-star" aria-hidden="true">✳</span></div>
+				<div class="hero-stamp" aria-label="Fait avec amour">
+					<span>FAIT AVEC</span>
+					<strong>♥</strong>
+					<span>AMOUR</span>
+				</div>
+			</div>
+			<div class="hero-index" aria-hidden="true">01 / 04</div>
+		</section>
+
+		<section class="breeds-section" aria-labelledby="breeds-title">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow"><span class="eyebrow-line"></span> À CHACUN SON CARACTÈRE</p>
+					<h2 id="breeds-title">Quel chien vous ressemble&nbsp;?</h2>
+				</div>
+				<p class="section-description">Petit explorateur ou grand casanier, il y a une personnalité pour chaque quotidien.</p>
+			</div>
+
+			<div class="breed-tools">
+				<div class="filter-list" role="group" aria-label="Filtrer les chiens par taille">
+					<button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tous</button>
+					<button class="filter-button" type="button" data-filter="small" aria-pressed="false">Petits</button>
+					<button class="filter-button" type="button" data-filter="medium" aria-pressed="false">Moyens</button>
+					<button class="filter-button" type="button" data-filter="large" aria-pressed="false">Grands</button>
+				</div>
+				<label class="search-box">
+					<span class="search-symbol" aria-hidden="true">⌕</span>
+					<span class="visually-hidden">Rechercher une race</span>
+					<input id="breed-search" type="search" placeholder="Rechercher une race" autocomplete="off">
+				</label>
+			</div>
+
+			<div class="breed-grid" id="breed-grid" aria-live="polite">
+				<article class="breed-card" data-size="large" data-name="Golden Retriever" data-temperament="Doux, sociable et toujours partant pour une promenade.">
+					<div class="breed-photo-wrap"><img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?auto=format&fit=crop&w=720&q=80" alt="Golden retriever assis dans l’herbe" loading="lazy"><span class="breed-size">GRAND</span></div>
+					<div class="breed-info"><div><h3>Golden Retriever</h3><p>Le rayon de soleil</p></div><button class="detail-button" type="button" aria-label="Découvrir le Golden Retriever" data-details>+</button></div>
+				</article>
+				<article class="breed-card" data-size="small" data-name="Bouledogue français" data-temperament="Attachant, joueur et heureux de partager le canapé.">
+					<div class="breed-photo-wrap"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=720&q=80" alt="Petit chien au regard attentif" loading="lazy"><span class="breed-size">PETIT</span></div>
+					<div class="breed-info"><div><h3>Bouledogue français</h3><p>Le petit clown</p></div><button class="detail-button" type="button" aria-label="Découvrir le Bouledogue français" data-details>+</button></div>
+				</article>
+				<article class="breed-card" data-size="medium" data-name="Berger australien" data-temperament="Vif, malin et complice, il adore apprendre et bouger.">
+					<div class="breed-photo-wrap"><img src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?auto=format&fit=crop&w=720&q=80" alt="Berger australien au pelage tricolore" loading="lazy"><span class="breed-size">MOYEN</span></div>
+					<div class="breed-info"><div><h3>Berger australien</h3><p>L’aventurier malin</p></div><button class="detail-button" type="button" aria-label="Découvrir le Berger australien" data-details>+</button></div>
+				</article>
+				<article class="breed-card" data-size="small" data-name="Teckel" data-temperament="Curieux, courageux et plein d’énergie malgré ses petites pattes.">
+					<div class="breed-photo-wrap"><img src="https://images.unsplash.com/photo-1612195583950-b8fd34c87093?auto=format&fit=crop&w=720&q=80" alt="Teckel à poil court en promenade" loading="lazy"><span class="breed-size">PETIT</span></div>
+					<div class="breed-info"><div><h3>Teckel</h3><p>Le cœur vaillant</p></div><button class="detail-button" type="button" aria-label="Découvrir le Teckel" data-details>+</button></div>
+				</article>
+				<article class="breed-card" data-size="large" data-name="Labrador" data-temperament="Généreux, patient et proche de toute la famille.">
+					<div class="breed-photo-wrap"><img src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?auto=format&fit=crop&w=720&q=80" alt="Labrador chocolat assis en extérieur" loading="lazy"><span class="breed-size">GRAND</span></div>
+					<div class="breed-info"><div><h3>Labrador</h3><p>Le grand sensible</p></div><button class="detail-button" type="button" aria-label="Découvrir le Labrador" data-details>+</button></div>
+				</article>
+				<article class="breed-card" data-size="medium" data-name="Shiba Inu" data-temperament="Indépendant, attentif et drôle, avec une vraie personnalité.">
+					<div class="breed-photo-wrap"><img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=720&q=80" alt="Shiba Inu roux dans un parc" loading="lazy"><span class="breed-size">MOYEN</span></div>
+					<div class="breed-info"><div><h3>Shiba Inu</h3><p>L’esprit libre</p></div><button class="detail-button" type="button" aria-label="Découvrir le Shiba Inu" data-details>+</button></div>
+				</article>
+			</div>
+			<p class="empty-state" id="empty-state" hidden>Aucune race ne correspond à cette recherche.</p>
+			<p class="results-count" id="results-count" aria-live="polite">6 races à découvrir</p>
+		</section>
+
+		<section class="care-note" aria-labelledby="care-title">
+			<div class="care-icon" aria-hidden="true">✳</div>
+			<div class="care-copy"><p class="eyebrow">LE PETIT RAPPEL</p><h2 id="care-title">Un chien, c’est pour la vie.</h2><p>Du temps, des soins et beaucoup d’amour : accueillir un chien, c’est choisir une belle histoire à écrire chaque jour.</p></div>
+			<span class="care-side-note">TOUJOURS<br>ENSEMBLE</span>
+		</section>
+	</main>
+
+	<footer class="footer"><span>compagnon<span class="brand-dot">.</span></span><span>Fait avec amour et quelques poils.</span><span>© 2026</span></footer>
+
+	<dialog class="breed-dialog" id="breed-dialog" aria-labelledby="dialog-title">
+		<button class="dialog-close" type="button" aria-label="Fermer">×</button>
+		<p class="eyebrow">FAISONS CONNAISSANCE</p>
+		<h2 id="dialog-title"></h2>
+		<p id="dialog-description"></p>
+		<p class="dialog-reminder">Chaque chien est unique : son caractère dépend aussi de son histoire et de son éducation.</p>
+	</dialog>
+</body>
+</html>
