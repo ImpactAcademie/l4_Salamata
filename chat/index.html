@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#fff4f3">
+	<meta name="description" content="Un jardin plein de douceur pour découvrir les chats, leurs petits caractères et leurs habitudes.">
+	<title>Les chats — Le jardin des ronrons</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header class="topbar">
+		<div class="brand"><span class="brand-flower" aria-hidden="true">✿</span><span>chat<span class="brand-heart">♥</span>fleuri</span></div>
+		<p class="topbar-note">Un petit jardin pour les amoureux des chats</p>
+		<span class="topbar-season">LE JARDIN DES RONRONS</span>
+	</header>
+
+	<main>
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-flower flower-one" aria-hidden="true">✿</div>
+			<div class="hero-flower flower-two" aria-hidden="true">✿</div>
+			<div class="hero-copy">
+				<p class="eyebrow"><span></span> PETITS MUSEAUX, GRANDES HISTOIRES</p>
+				<h1 id="hero-title">Un peu de rose,<br>beaucoup de <em>ronrons.</em></h1>
+				<p class="hero-intro">Des moustaches curieuses, des siestes au soleil et des fleurs partout. Entrez dans le monde merveilleux des chats.</p>
+				<button class="discover-button" type="button" data-scroll-gallery>Découvrir les chats <span aria-hidden="true">↓</span></button>
+				<div class="hero-signature"><span class="signature-heart">♥</span> Une dose de douceur, chaque jour</div>
+			</div>
+			<div class="hero-art">
+				<div class="hero-image-frame"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=85" alt="Chat tigré aux grands yeux" fetchpriority="high"></div>
+				<div class="hero-label"><span>LES PETITS BONHEURS</span><span>✿</span></div>
+				<div class="flower-badge" aria-hidden="true"><span>FLEURS</span><strong>♥</strong><span>ET CHATS</span></div>
+			</div>
+			<div class="hero-side-note" aria-hidden="true">DOUCEUR À VOLONTÉ · 100% MIAOU</div>
+		</section>
+
+		<section class="cats-section" id="cats" aria-labelledby="cats-title">
+			<div class="section-heading">
+				<div><p class="eyebrow"><span></span> RENCONTREZ LA BANDE</p><h2 id="cats-title">Des caractères à croquer</h2></div>
+				<p class="section-description">Chaque chat a son petit monde. Voici quelques personnalités qui pourraient bien vous faire fondre.</p>
+			</div>
+
+			<div class="cat-controls">
+				<div class="filters" role="group" aria-label="Filtrer les chats">
+					<button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tous</button>
+					<button class="filter-button" type="button" data-filter="câlin" aria-pressed="false">Câlins</button>
+					<button class="filter-button" type="button" data-filter="joueur" aria-pressed="false">Joueurs</button>
+					<button class="filter-button" type="button" data-filter="rêveur" aria-pressed="false">Rêveurs</button>
+				</div>
+				<label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Rechercher un chat</span><input id="cat-search" type="search" placeholder="Un nom, une humeur…" autocomplete="off"></label>
+			</div>
+
+			<div class="cat-grid" id="cat-grid" aria-live="polite">
+				<article class="cat-card" data-mood="câlin joueur" data-name="Mimosa" data-note="La spécialiste des genoux disponibles. Mimosa adore les caresses, les plaids moelleux et suivre ses humains partout.">
+					<div class="cat-photo"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Chat tigré aux grands yeux" loading="lazy"><span class="mood-tag">CÂLIN <span>♥</span></span><button class="favorite-button" type="button" aria-label="Ajouter Mimosa aux favoris" aria-pressed="false">♡</button></div>
+					<div class="cat-info"><div><span class="cat-number">01 / LE PETIT CŒUR</span><h3>Mimosa</h3><p>La reine des genoux</p></div><button class="more-button" type="button" aria-label="En savoir plus sur Mimosa" data-details>+</button></div>
+				</article>
+				<article class="cat-card" data-mood="joueur" data-name="Pistache" data-note="Pistache transforme le moindre carton en château fort. Curieuse et pleine d'énergie, elle est toujours partante pour une partie de chasse au ruban.">
+					<div class="cat-photo"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" alt="Chat avec une expression joueuse" loading="lazy"><span class="mood-tag">JOUEUR <span>✿</span></span><button class="favorite-button" type="button" aria-label="Ajouter Pistache aux favoris" aria-pressed="false">♡</button></div>
+					<div class="cat-info"><div><span class="cat-number">02 / LA PETITE FOLLE</span><h3>Pistache</h3><p>Exploratrice de cartons</p></div><button class="more-button" type="button" aria-label="En savoir plus sur Pistache" data-details>+</button></div>
+				</article>
+				<article class="cat-card" data-mood="rêveur câlin" data-name="Coquelicot" data-note="Coquelicot choisit toujours le rayon de soleil le plus doux. Son ronronnement discret accompagne les après-midi tranquilles.">
+					<div class="cat-photo"><img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=800&q=80" alt="Chat blanc et roux qui se repose" loading="lazy"><span class="mood-tag">RÊVEUR <span>✿</span></span><button class="favorite-button" type="button" aria-label="Ajouter Coquelicot aux favoris" aria-pressed="false">♡</button></div>
+					<div class="cat-info"><div><span class="cat-number">03 / LE GRAND RÊVEUR</span><h3>Coquelicot</h3><p>Amoureux du soleil</p></div><button class="more-button" type="button" aria-label="En savoir plus sur Coquelicot" data-details>+</button></div>
+				</article>
+				<article class="cat-card" data-mood="joueur câlin" data-name="Framboise" data-note="Framboise est une boule d'affection qui adore les jeux, les visiteurs et les longues conversations à base de miaou.">
+					<div class="cat-photo"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80" alt="Chat roux qui observe avec curiosité" loading="lazy"><span class="mood-tag">JOUEUR <span>♥</span></span><button class="favorite-button" type="button" aria-label="Ajouter Framboise aux favoris" aria-pressed="false">♡</button></div>
+					<div class="cat-info"><div><span class="cat-number">04 / LA PETITE BAVARDE</span><h3>Framboise</h3><p>Championne de miaous</p></div><button class="more-button" type="button" aria-label="En savoir plus sur Framboise" data-details>+</button></div>
+				</article>
+				<article class="cat-card" data-mood="rêveur" data-name="Pétale" data-note="Pétale est calme et observatrice. Elle aime les fenêtres ouvertes sur le jardin et les siestes dans les endroits les plus inattendus.">
+					<div class="cat-photo"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80&sat=-65" alt="Chat paisible dans une lumière douce" loading="lazy"><span class="mood-tag">RÊVEUR <span>✿</span></span><button class="favorite-button" type="button" aria-label="Ajouter Pétale aux favoris" aria-pressed="false">♡</button></div>
+					<div class="cat-info"><div><span class="cat-number">05 / LA PETITE POÈTE</span><h3>Pétale</h3><p>Contemplatrice du jardin</p></div><button class="more-button" type="button" aria-label="En savoir plus sur Pétale" data-details>+</button></div>
+				</article>
+				<article class="cat-card" data-mood="câlin joueur" data-name="Cerise" data-note="Cerise aime autant les séances de jeu que les longues pauses près de vous. Elle a le don de rendre chaque journée un peu plus joyeuse.">
+					<div class="cat-photo"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80" alt="Chat roux au regard tendre" loading="lazy"><span class="mood-tag">CÂLIN <span>♥</span></span><button class="favorite-button" type="button" aria-label="Ajouter Cerise aux favoris" aria-pressed="false">♡</button></div>
+					<div class="cat-info"><div><span class="cat-number">06 / LE SOLEIL DE LA MAISON</span><h3>Cerise</h3><p>Bonne humeur contagieuse</p></div><button class="more-button" type="button" aria-label="En savoir plus sur Cerise" data-details>+</button></div>
+				</article>
+			</div>
+			<p class="empty-state" id="empty-state" hidden>Aucun petit museau ne correspond à cette recherche.</p>
+			<p class="result-count" id="result-count" aria-live="polite">6 chats dans le jardin</p>
+		</section>
+
+		<section class="garden-note" aria-labelledby="garden-title">
+			<div class="garden-flower" aria-hidden="true">✿</div>
+			<div><p class="eyebrow">UN PETIT MOT DU JARDIN</p><h2 id="garden-title">Un chat heureux, c’est un chat aimé.</h2><p>Un coin tranquille, des jeux, des soins et une présence attentive : les plus jolies histoires commencent avec de petites attentions.</p></div>
+			<div class="garden-heart" aria-hidden="true">♥</div>
+		</section>
+	</main>
+
+	<footer class="footer"><span>chat<span class="brand-heart">♥</span>fleuri</span><span>Du bonheur avec des moustaches.</span><span>© 2026</span></footer>
+
+	<dialog class="cat-dialog" id="cat-dialog" aria-labelledby="dialog-title">
+		<button class="dialog-close" type="button" aria-label="Fermer">×</button>
+		<p class="eyebrow">UN PETIT PORTRAIT</p>
+		<h2 id="dialog-title"></h2>
+		<p id="dialog-note"></p>
+		<p class="dialog-footer">À chacun son rythme, à chacun son petit bonheur. <span>♥</span></p>
+	</dialog>
+</body>
+</html>
