@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f2f0e6">
+	<meta name="description" content="Découvrez les éléphants, leurs familles, leur intelligence et les paysages qu’ils habitent.">
+	<title>Éléphant — Géants sensibles</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header class="topbar">
+		<div class="brand"><span class="brand-icon" aria-hidden="true">E</span><span>grands<span class="brand-dot">.</span></span></div>
+		<p class="topbar-note"><span class="topbar-line"></span> À la rencontre des éléphants</p>
+		<span class="topbar-edition">CARNET DU VIVANT · 01</span>
+	</header>
+
+	<main>
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="eyebrow-mark">✳</span> GÉANTS AU GRAND CŒUR</p>
+				<h1 id="hero-title">La force<br>tranquille<br><em>du vivant.</em></h1>
+				<p class="hero-intro">Ils avancent en famille, se souviennent des chemins et prennent soin les uns des autres. Approchons-nous, tout doucement.</p>
+				<div class="hero-meta"><span class="meta-index">01</span><span>Une rencontre avec les<br>plus grands terrestres.</span></div>
+			</div>
+			<div class="hero-visual">
+				<img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1400&q=85" alt="Éléphant dans son habitat naturel" fetchpriority="high">
+				<div class="hero-caption"><span>GRANDS, MAIS JAMAIS SEULS</span><span aria-hidden="true">✳</span></div>
+				<div class="hero-stamp" aria-hidden="true"><span>RESTER</span><strong>ENSEMBLE</strong><span>COMPTE</span></div>
+			</div>
+			<div class="hero-side-label" aria-hidden="true">AFRIQUE · ASIE · FAMILLE</div>
+		</section>
+
+		<section class="discover" aria-labelledby="discover-title">
+			<div class="section-heading">
+				<div><p class="eyebrow"><span class="eyebrow-mark">✳</span> PRENDRE LE TEMPS D’OBSERVER</p><h2 id="discover-title">Tout un monde à découvrir</h2></div>
+				<p class="section-intro">Derrière leur silhouette impressionnante, une vie sociale riche, des sens étonnants et des liens qui durent.</p>
+			</div>
+
+			<div class="fact-layout">
+				<div class="fact-tabs" role="tablist" aria-label="Découvrir les éléphants par thème">
+					<button class="fact-tab is-active" id="tab-family" type="button" role="tab" aria-selected="true" aria-controls="fact-panel" data-topic="family"><span>01</span> La famille <span class="tab-arrow" aria-hidden="true">↗</span></button>
+					<button class="fact-tab" id="tab-trunk" type="button" role="tab" aria-selected="false" aria-controls="fact-panel" data-topic="trunk"><span>02</span> La trompe <span class="tab-arrow" aria-hidden="true">↗</span></button>
+					<button class="fact-tab" id="tab-home" type="button" role="tab" aria-selected="false" aria-controls="fact-panel" data-topic="home"><span>03</span> Leur habitat <span class="tab-arrow" aria-hidden="true">↗</span></button>
+					<button class="fact-tab" id="tab-care" type="button" role="tab" aria-selected="false" aria-controls="fact-panel" data-topic="care"><span>04</span> Se protéger <span class="tab-arrow" aria-hidden="true">↗</span></button>
+				</div>
+				<article class="fact-panel" id="fact-panel" role="tabpanel" aria-labelledby="tab-family" tabindex="0">
+					<div class="panel-topline"><span class="panel-kicker" id="fact-kicker">LIENS QUI NOUS UNISSENT</span><span class="panel-symbol" aria-hidden="true">✳</span></div>
+					<h3 id="fact-title">La famille avant tout.</h3>
+					<p id="fact-copy">Les éléphants vivent en groupes familiaux soudés. Les femelles plus âgées guident souvent le troupeau, transmettant aux plus jeunes les chemins et les savoirs du groupe.</p>
+					<div class="panel-foot"><span class="panel-line"></span><span id="fact-number">01 — 04</span></div>
+				</article>
+			</div>
+
+			<div class="did-you-know">
+				<div class="know-icon" aria-hidden="true">?</div>
+				<div class="know-copy"><p class="eyebrow">UNE PETITE CURIOSITÉ</p><p id="random-fact">La trompe d’un éléphant réunit le nez et la lèvre supérieure. Elle peut saisir de tout petits objets comme déplacer de lourdes branches.</p></div>
+				<button class="fact-button" type="button" id="new-fact">Une autre curiosité <span aria-hidden="true">↻</span></button>
+			</div>
+		</section>
+
+		<section class="closing" aria-labelledby="closing-title">
+			<div class="closing-image"><img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=1000&q=80" alt="Éléphant avançant dans un paysage naturel" loading="lazy"></div>
+			<div class="closing-copy"><p class="eyebrow"><span class="eyebrow-mark">✳</span> UN ÉQUILIBRE À PRÉSERVER</p><h2 id="closing-title">Protéger leur monde,<br>c’est aussi protéger le nôtre.</h2><p>Les éléphants ont besoin d’espaces naturels vastes et reliés. Mieux connaître leurs vies, c’est déjà commencer à mieux les respecter.</p><span class="closing-signature">LA TERRE EST AUSSI LEUR MAISON.</span></div>
+		</section>
+	</main>
+
+	<footer class="footer"><span>grands<span class="brand-dot">.</span></span><span>Un carnet pour regarder le vivant autrement.</span><span>© 2026</span></footer>
+</body>
+</html>
